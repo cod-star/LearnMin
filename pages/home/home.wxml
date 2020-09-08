@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<text>Hello word</text>
+<button size="mini">按钮</button>
