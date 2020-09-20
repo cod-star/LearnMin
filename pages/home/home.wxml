@@ -1,3 +1,24 @@
 <!--pages/home/home.wxml-->
 <text>Hello word</text>
 <button size="mini">按钮</button>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"/>
+
+<image 
+wx:for="{{1}}"
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+lazy-load="{{true}}"
+show-menu-by-longpress="{{true}}"
+/>
+
+<image 
+      show-menu-by-longpress      
+      src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+      <!-- 5.input -->
+      <input value="哈哈哈"/>
+
+      <!-- 5.2  type 决定键盘输入类型 -->
+      <input type="text"/>
