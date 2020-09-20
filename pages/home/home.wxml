@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
 <text>Hello word</text>
-<button size="mini">按钮</button>
+<!-- 水平 -->
+<scroll-view class="warpper" scroll-x>
+        <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- 垂直 需要设置高度-->
+<scroll-view class="warpper2" scroll-y>
+        <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
