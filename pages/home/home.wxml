@@ -1,3 +1,31 @@
 <!--pages/home/home.wxml-->
-<text>Hello word</text>
-<button size="mini">按钮</button>
+
+<!-- 1.事件处理 -->
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<button size="mini" bind:tap="handleBtnClick">按钮</button>
+<button size="mini" catch:tap="handleBtnClick">按钮</button>
+
+<!-- 2.常见的监听对象 -->
+<!-- bind:mouseStart
+    bind:mouseMove
+    bind:mouseEnd
+    bind:tap
+-->
+
+<!-- 3.事件对象event -->
+
+<!-- 4.事件传递参数 -->
+<view class="container">
+  <block wx:for="{{titles}}"  wx:key="{{index}}">
+    <view class="item" 
+    bindtap="handleItemClick"
+    data-index="{{index}}">
+      {{item}}</view>
+  </block>
+</view>
+
+<!-- 事件冒泡 bindtap 和事件捕获capture-bind:tap
+  bind 层层传递
+  catch 阻止事件进一步传递
+-->
+<view></view>
