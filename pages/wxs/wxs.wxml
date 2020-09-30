@@ -1,0 +1,28 @@
+
+<!-- 2.1wxs的定义格式 -->
+<!-- <wxs module="info">
+  // JS代码
+  var message = "Hello World";
+  var name = 'cody';
+
+  // commojs的模块化导出
+  module.exports = {
+    message: message,
+    name: name
+  }
+</wxs> -->
+
+<!-- 2.2定义在单独的wxs文件中，再使用《wxs》标签导入 -->
+<!-- 不能使用绝对路径，必须使用相对路径 -->
+
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+
+// 使用wxs
+
+<wxs src="../../wxs/fomat.wxs"  module="fomat"/>
+
+<view>{{fomat.priceFomat(price,3)}}</view>
+<view>{{fomat.dateFormat(time,'yyyy-mm-dd hh:mm:ss')}}</view>

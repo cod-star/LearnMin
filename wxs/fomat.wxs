@@ -1,0 +1,16 @@
+// 价格格式化
+function priceFomat(price,number) {
+  var number = number || 2;
+
+  return price.toFixed(number)
+}
+
+// 时间格式化
+function dateFormat(tiemstamp,format) {
+  return '2019-3-4'
+}
+
+module.exports = {
+  priceFomat: priceFomat,
+  dateFormat: dateFormat
+}

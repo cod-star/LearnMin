@@ -1,0 +1,10 @@
+
+  // JS代码
+  var message = "Hello World";
+  var name = 'cody';
+
+  // commojs的模块化导出
+  module.exports = {
+    message: message,
+    name: name
+  }

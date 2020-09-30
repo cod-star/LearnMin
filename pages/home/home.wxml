@@ -1,3 +1,45 @@
 <!--pages/home/home.wxml-->
 <text>Hello word</text>
 <button size="mini">按钮</button>
+
+<!-- 设置样式 -->
+<!-- 内联样式 -->
+<view style="color:red; font-size:32px">哈哈哈</view>
+
+<!-- 页内样式 -->
+<view class="cont"></view>
+
+<!-- 全局样式  在App中App.wxss-->
+
+<view>{{nowTime}}</view>
+
+<button size="mini" bindtap="handleClick">切换</button>
+<view class='box1 {{isActive ? "active" : ""}}'>哈哈哈</view>
+
+<!-- 条件判断 -->
+
+<view wx:if="{{isShow}}">HHH</view>
+
+<!-- wx:for  列表渲染-->
+<!-- <block wx:for="{{3}}">
+<view>哈哈哈</view>
+</block> -->
+
+<!-- 3.item\index起名字 -->
+<view wx:for="{{movies}}" wx:for-item="movie" >{{movie}}</view>
+
+<!-- <block wx:for="{{number}}" wx:for-item="num">
+  <block wx:for="{{num}}">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- template -->
+<!-- <template name="contentItem">
+  <button size="mini">{{btnText}}</button>
+  <view>{{content}}</view>
+</template> -->
+<import src="/wxml/template.wxml"/>
+
+<template is="contentItem" data="{{btnText:'按钮',content:'哈哈哈'}}"/>
+<template is="contentItem" data="{{btnText: '警告',content:'呵呵呵'}}"/>

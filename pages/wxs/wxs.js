@@ -1,40 +1,21 @@
-// pages/home/home.js
+// pages/wxs/wxs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nowTime: new Date().toLocaleString(),
-    isActive: false,
-    isShow: false,
-    movies: ["大话西游",'盗梦空间'],
-    number: [
-      [12,34,23,23],
-      [12,44,24,23,442,44],
-      [23,56,45]
-    ]
+    price: 25.455662,
+    tiem: 20190305
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setInterval(() => {
-      this.setData({
-        nowTime: new Date().toLocaleString()
-      })
-    },1000)
-  },
 
-  handleClick() {
-      this.setData({
-        isActive: !this.data.isActive
-      })
-      
   },
-
-  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
