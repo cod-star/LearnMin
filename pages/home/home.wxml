@@ -1,3 +1,18 @@
 <!--pages/home/home.wxml-->
 <text>Hello word</text>
 <button size="mini">按钮</button>
+
+<!-- toast -->
+<button bindtap="handleShowToast">showToast</button>
+
+<!-- Modal -->
+<button bindtap="handleShowModal">showModel</button>
+
+<!-- loading -->
+<button bindtap="handleShowLoading">showLoading</button>
+
+<!-- actionSheet -->
+<button bindtap="handleShowAction">showAction</button>
+
+<!-- 分享按钮 -->
+<button open-type="share">分享按钮</button>
