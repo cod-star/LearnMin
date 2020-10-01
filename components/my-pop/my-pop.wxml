@@ -1,0 +1,6 @@
+<!--components/my-pop/my-pop.wxml-->
+<!-- <text>components/my-pop/my-pop.wxml</text> -->
+<view class="title titleclass">{{title}}</view>
+<view class="content">内容</view>
+
+<button bindtap="handleInea" size="mini">+1</button>

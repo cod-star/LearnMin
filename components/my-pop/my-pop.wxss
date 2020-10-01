@@ -1,0 +1,9 @@
+/* components/my-pop/my-pop.wxss */
+.title {
+  font-size: 30px;
+  /* color: red; */
+}
+
+.content {
+  background: oldlace;
+}

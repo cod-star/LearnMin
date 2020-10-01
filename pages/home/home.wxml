@@ -1,3 +1,17 @@
 <!--pages/home/home.wxml-->
-<text>Hello word</text>
+<text class="title">Hello word</text>
 <button size="mini">按钮</button>
+
+<!-- 使用自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+
+<!-- 给自定义组件传递数据和样式 -->
+<!-- <my-pop title="哈哈哈" titleclass="green"/> -->
+<!-- <my-pop title="吼吼吼" titleclass="red"/> -->
+<my-pop bind:increment="handleInea"/>
+<view>当前计数：{{count}}</view>
+
+<!-- 练习 -->
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:itemclick="handleTabClick" class="sel" />
+
+<button size="mini" bindtap="handleIncr">修改组件的数据</button>

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-cpn":"/components/my-cpn/my-cpn",
+    "my-pop":"/components/my-pop/my-pop",
+    "w-tab-control":"/components/w-tab-control/w-tab-control"
+  }
 }
