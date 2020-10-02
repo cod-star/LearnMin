@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+<!-- delta="2" 返回两个层级 -->
+<navigator open-type="navigateBack">返回</navigator>
+
+<!-- 代码返回 -->
+<button size="mini" bindtap="handleBack">返回</button>
